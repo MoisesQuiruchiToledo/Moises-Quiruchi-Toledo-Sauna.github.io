@@ -1,5 +1,5 @@
 // ===== Configuración =====
-const RUTA_MODELO = "https://drive.google.com/uc?export=download&id=12345abcde"; // EDITA: pon tu modelo en la carpeta models/
+const RUTA_MODELO = "https://drive.google.com/uc?export=download&id=115iBNVNk4PW-teqd6QZFn7O5IPNE2HYv"; // EDITA: pon tu modelo en la carpeta models/
 
 const root = document.documentElement;
 const contenedor = document.getElementById("escena");
