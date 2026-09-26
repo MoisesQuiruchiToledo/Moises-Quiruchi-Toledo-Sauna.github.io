@@ -1,5 +1,5 @@
 // ===== Configuración =====
-const RUTA_MODELO = "sauna.glb"; // EDITA: pon tu modelo en la carpeta models/
+const RUTA_MODELO = "https://drive.google.com/uc?export=download&id=1xY7z9abcDEFgHiJkLmNoPqRsTuVwXyZ"; // EDITA: pon tu modelo en la carpeta models/
 
 const root = document.documentElement;
 const contenedor = document.getElementById("escena");
