@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precios y horarios | Sauna Edén</title>
+<meta name="description" content="Sauna Edén: duchas, sauna individual y sauna familiar para relajarte y renovar tu cuerpo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">Sauna <span>Edén</span></a>
+    <button id="menu" aria-label="Abrir menú">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="precios.html" class="activo">Precios</a>
+      <a href="visor3d.html">Modelo 3D</a>
+      <a href="reservar.html">Reservar</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="precios">
+  <div class="wrap">
+    <span class="eyebrow">Precios y horarios</span>
+    <h2>Simple y transparente</h2>
+    <div class="fila">
+      <div>
+        <h3 class="sub">Precios</h3>
+        <!-- EDITA: cambia los precios por los reales -->
+        <div class="price"><span>Ducha individual (15 min)</span><b>Bs 5</b></div>
+        <div class="price"><span>Sauna individual (1 hora)</span><b>Bs 10</b></div>
+        <div class="price"><span>Sauna familiar (1 hora)</span><b>Bs 26</b></div>
+        <h3 class="sub">Horarios</h3>
+        <!-- EDITA: cambia los horarios por los reales -->
+        <ul class="hours">
+          <li><span>Lunes a viernes</span><span>09:00 Am – 21:00 Pm</span></li>
+          <li><span>Sábados</span><span>10:00 Am – 21:00 Pm</span></li>
+          <li><span>Domingos</span><span>10:00 Am – 18:00 Pm</span></li>
+        </ul>
+      </div>
+      <div class="modelo3d" data-modelo="ducha.glb" data-forma="cubeta"></div>
+    </div>
+      </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Sauna Edén</strong> · Tu espacio de relajación</p>
+    <!-- EDITA: dirección y teléfono reales -->
+    <p>📍 Unicacion - https://maps.app.goo.gl/Qdoe1yJhAyhKKQyr5  📞 <a href="tel:+59164742191">+591 64742191</a></p>
+    <p style="margin-top:10px;opacity:.8">© 2026 Sauna Edén. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="script.js"></script>
+<script src="modelos.js"></script>
+</body>
+</html>

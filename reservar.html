@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservar | Sauna Edén</title>
+<meta name="description" content="Sauna Edén: duchas, sauna individual y sauna familiar para relajarte y renovar tu cuerpo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">Sauna <span>Edén</span></a>
+    <button id="menu" aria-label="Abrir menú">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="precios.html">Precios</a>
+      <a href="visor3d.html">Modelo 3D</a>
+      <a href="reservar.html" class="activo">Reservar</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="reserva" class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Reservas</span>
+      <h2>Agenda tu sesión</h2>
+      <p class="lead">Llena el formulario y te llevamos directo a WhatsApp para confirmar.</p>
+      <div class="fila">
+      <form id="form">
+        <label>Nombre<input type="text" id="nombre" required placeholder="Tu nombre"></label>
+        <label>Servicio
+          <select id="servicio">
+            <option>Ducha</option>
+            <option>Sauna individual</option>
+            <option>Sauna familiar</option>
+          </select>
+        </label>
+        <label>Fecha<input type="date" id="fecha" required></label>
+        <label>Hora<input type="time" id="hora" required></label>
+        <label>Comentarios (opcional)<textarea id="coment" rows="3"></textarea></label>
+        <button class="btn" type="submit">Reservar por WhatsApp</button>
+      </form>
+      <div class="modelo3d" data-modelo="eucalipto2.glb" data-forma="reloj"></div>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Sauna Edén</strong> · Tu espacio de relajación</p>
+    <!-- EDITA: dirección y teléfono reales -->
+    <p>📍Unicacion - https://maps.app.goo.gl/Qdoe1yJhAyhKKQyr5  📞 <a href="tel:+59164742191">+591 64742191</a></p>
+    <p style="margin-top:10px;opacity:.8">© 2026 Sauna Edén. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="script.js"></script>
+<script src="modelos.js"></script>
+</body>
+</html>

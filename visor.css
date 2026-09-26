@@ -1,0 +1,68 @@
+.visor{
+    display:flex;
+    flex-direction:column;
+    height:calc(100vh - 64px);
+    min-height:480px
+}
+.barra-visor{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+    padding:14px 20px
+}
+.barra-visor h1{
+    font-size:1.4rem;
+    color:var(--cedar)
+}
+.acciones{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap
+}
+.mini{
+    background:var(--card);
+    color:var(--ink);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:8px 14px;
+    font:inherit;
+    font-size:.9rem;
+    cursor:pointer;
+    backdrop-filter:blur(6px)
+}
+.mini:hover{
+    border-color:var(--terra)
+}
+#escena{
+    flex:1;
+    position:relative;
+    min-height:0
+}
+#escena canvas{
+    display:block
+}
+#estado{
+    position:absolute;
+    top:10px;
+    left:20px;
+    z-index:2;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:8px 14px;
+    font-size:.85rem;
+    color:var(--muted);
+    max-width:min(90%,420px);
+    backdrop-filter:blur(6px)
+}
+#estado[hidden]{
+    display:none
+}
+.ayuda{
+    text-align:center;
+    font-size:.8rem;
+    color:var(--muted);
+    padding:8px
+}

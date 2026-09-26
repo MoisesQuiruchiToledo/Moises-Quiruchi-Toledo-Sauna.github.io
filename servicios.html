@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | Sauna Edén</title>
+<meta name="description" content="Sauna Edén: duchas, sauna individual y sauna familiar para relajarte y renovar tu cuerpo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">Sauna <span>Edén</span></a>
+    <button id="menu" aria-label="Abrir menú">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" class="activo">Servicios</a>
+      <a href="precios.html">Precios</a>
+      <a href="visor3d.html">Modelo 3D</a>
+      <a href="reservar.html">Reservar</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="servicios">
+  <div class="wrap">
+    <span class="eyebrow">Servicios</span>
+    <h2>Elige tu experiencia</h2>
+    <div class="fila">
+      <div class="textos">
+        <article class="card"><div class="ico">🚿</div><h3>Duchas</h3><p>Duchas de agua caliente para completar tu sesión o refrescarte después del sauna.</p></article>
+        <article class="card"><div class="ico">🔥</div><h3>Sauna individual</h3><p>Un espacio privado y tranquilo, solo para ti.</p></article>
+      </div>
+      <div class="modelo3d" data-modelo="eucalipto.glb" data-forma="combo"></div>
+    </div>
+    <div class="fila">
+      <div class="textos">
+        <article class="card"><div class="ico">👥</div><h3>Sauna familiar</h3><p>Un espacio amplio para compartir con tu familia o tus amigos. Ideal para relajarse en grupo.</p></article>
+      </div>
+      <div class="modelo3d" data-modelo="trapitos.glb" data-forma="familiar"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Sauna Edén</strong> · Tu espacio de relajación</p>
+    <!-- EDITA: dirección y teléfono reales -->
+    <p>📍 Unicacion - https://maps.app.goo.gl/Qdoe1yJhAyhKKQyr5  📞 <a href="tel:+59164742191">+591 64742191</a></p>
+    <p style="margin-top:10px;opacity:.8">© 2026 Sauna Edén. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="script.js"></script>
+<script src="modelos.js"></script>
+</body>
+</html>

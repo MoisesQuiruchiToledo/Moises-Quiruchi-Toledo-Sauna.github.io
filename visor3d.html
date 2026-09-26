@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modelo 3D | Sauna Edén</title>
+<meta name="description" content="Sauna Edén: duchas, sauna individual y sauna familiar para relajarte y renovar tu cuerpo.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="visor.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">Sauna <span>Edén</span></a>
+    <button id="menu" aria-label="Abrir menú">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="precios.html">Precios</a>
+      <a href="visor3d.html" class="activo">Modelo 3D</a>
+      <a href="reservar.html">Reservar</a>
+    </div>
+  </nav>
+</header>
+
+<main class="visor">
+  <div class="barra-visor">
+    <h1>Modelo 3D</h1>
+    <div class="acciones">
+      <button class="mini" id="rotar">⏸ Rotación</button>
+      <button class="mini" id="reset">↺ Vista</button>
+    </div>
+  </div>
+  <div id="escena"><div id="estado">Cargando modelo…</div></div>
+  <p class="ayuda">Arrastra para rotar · rueda para zoom · clic derecho para mover</p>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="script.js"></script>
+<script src="visor.js"></script>
+</body>
+</html>
