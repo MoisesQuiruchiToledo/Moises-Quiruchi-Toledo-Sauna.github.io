@@ -1,5 +1,5 @@
 // ===== Configuración =====
-const RUTA_MODELO = "https://files.catbox.moe/kbxeju.glb"; // EDITA: pon tu modelo en la carpeta models/
+const RUTA_MODELO = "sauna.glb"; // EDITA: pon tu modelo en la carpeta models/
 
 const root = document.documentElement;
 const contenedor = document.getElementById("escena");
